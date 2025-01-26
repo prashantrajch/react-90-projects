@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
+import Navbar from "./components/Navbar";
+import UnControlledForm from "./components/UnControlledForm";
+import LibraryValidatio from "./components/LibraryValidatio";
 
 const App = () => {
   return (
-    <div>App</div>
-  )
-}
+    <div>
+      <Navbar />
+      {/* <UnControlledForm /> */}
+      <LibraryValidatio />
+    </div>
+  );
+};
 
-export default App
+export default App;
