@@ -11,17 +11,25 @@ let datas = [
   {
     label: "Email",
     id: "email",
-    type: "email",
+    type: "text",
     placeholder: "example@gmail.com",
+  },
+  {
+    label: "Password",
+    id: "password",
+    type: "text",
+    placeholder: "Enter your password",
   },
 ];
 
 const schema = yup.object().shape({
   name: yup.string().required(),
   email: yup.string().email().required(),
+  password: yup.string().min(4,"Too short pasword").max(8).required(),
 });
 
 const LibraryValidatio = () => {
+
   async function handleSubmit(e) {
     e.preventDefault();
     const form = e.target;
@@ -30,9 +38,9 @@ const LibraryValidatio = () => {
     try {
       let validForm = await schema.isValid(formObj);
       if (validForm) {
-        console.log("I am succesfful fr")
+        console.log("I am succesfful form");
       } else {
-        await schema.validate(formObj,{abortEarly: false});
+        await schema.validate(formObj, { abortEarly: false });
       }
     } catch (error) {
       console.dir(error.errors);
