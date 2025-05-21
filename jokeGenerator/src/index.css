@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #e7e7e7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: #fff777;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #ff6963;
+  max-width: 500px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  background-color: beige;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.category {
+  max-width: fit-content;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: blueviolet;
+  color: white;
+  margin: 10px auto;
+}
+
+h3 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.divider {
+  width: 100%;
+  position: relative;
+  margin: 20px 0;
+}
+
+hr {
+  border: 2px dashed #777;
+}
+
+.divider > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: beige;
+  padding: 0 20px;
+}
+
+img {
+  width: 80px;
+}
+
+.answer {
+  text-align: center;
+}
+
+.btn {
+  display: block;
+  margin: 20px auto 10px auto;
+  padding: 8px 30px;
+  background-color: #ff6963;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: #ff6963aa;
+}
