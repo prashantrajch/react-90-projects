@@ -1,15 +1,12 @@
-import React from "react";
-import Navbar from "./components/Navbar";
-import UnControlledForm from "./components/UnControlledForm";
-import LibraryValidatio from "./components/LibraryValidatio";
+import AdvanceForm from "./components/advanceForm/AdvanceForm";
+import SimpleForm from "./components/simpleForm/SimpleForm";
 
 const App = () => {
   return (
-    <div>
-      <Navbar />
-      {/* <UnControlledForm /> */}
-      <LibraryValidatio />
-    </div>
+    <main className="main">
+      {/* <SimpleForm /> */}
+      <AdvanceForm />
+    </main>
   );
 };
 
